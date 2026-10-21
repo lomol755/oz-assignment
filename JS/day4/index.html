@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>암호화폐 가격 추적기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="tracker">
+        <header class="tracker-header">
+            <h1>🪙 암호화폐 가격 추적기</h1>
+            <p class="status">
+                <span id="status-dot" class="dot"></span>
+                <span id="status-text">연결 중...</span>
+            </p>
+        </header>
+
+        <!-- 탭: 전체보기 / 관심항목 -->
+        <nav class="tabs">
+            <button class="tab active" data-tab="all">전체보기</button>
+            <button class="tab" data-tab="favorites">관심항목 <span id="fav-count">0</span></button>
+        </nav>
+
+        <!-- 검색 -->
+        <input type="text" id="search" placeholder="코인 이름 검색 (예: BTC, ETH)" autocomplete="off">
+
+        <!-- 코인 목록 -->
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-star">관심</th>
+                        <th>코인</th>
+                        <th class="num">현재가 (USDT)</th>
+                        <th class="num">24h 변동률</th>
+                        <th class="num col-volume">24h 거래대금</th>
+                    </tr>
+                </thead>
+                <tbody id="coin-list"></tbody>
+            </table>
+            <p id="empty-message" class="empty"></p>
+        </div>
+
+        <footer class="tracker-footer">
+            데이터: Binance API · 1초마다 자동 업데이트
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
