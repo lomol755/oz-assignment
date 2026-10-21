@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+#contents {
+    text-align: center;
+}
+
+header {
+    font-family: "Nanum Pen Script", cursive;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+#github {
+    font-size: small;
+    color: gray;
+    text-decoration: none;
+}
+
+#github:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+main {
+    width: 300px;
+    margin: 40px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 120px;
+    font-size: x-small;
+}
+
+@media (max-width: 600px) {
+    .contact-row {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

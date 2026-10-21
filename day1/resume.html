@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <!-- 외부 CSS(External CSS) -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+     <!-- 우리가 만든 CSS -->
+     <link rel="stylesheet" href="./style.css">
+    
+     <!-- 구글 폰트  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+ <style>
+        /* Internal CSS(내부 CSS) */
+        /* 선택자(Selecter): 조건에 맞는 태그들을 골라내는 방법 */
+        /* * 전체 선택자 */
+        #contents{
+            text-align: center;
+        }
+        header {
+                font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+                font-size: x-large;
+                font-weight: bold;
+                margin: 20px;
+
+        }
+        #github {
+           font-size: small;
+           color: gray;
+           text-decoration: none;
+        }
+
+        #github:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+
+        main{
+            padding: 50px;
+           
+        }
+        footer {
+           
+            margin-top: 120px;
+            font-size: x-small
+        }
+    </style>
+</head>
+<body>
+    <a href="./resume_eng.html" id="english">영문 이력서</a>
+
+    <!-- contents -> 콘텐츠 영역(div id="contents" -->
+     <!-- centered -> 가운데 정렬(공통 속성)(div class="centered") -->
+    <div id="contents">
+        <!-- 이름 -->
+            <header>최현영</header>
+
+        <!-- 연락처 -->
+         <div class="contact-row"></div>
+         <span>lomol755@naver.com</span>
+         <!-- 휴대폰 -->
+          <span>010-5117-2536</span>
+
+            <!-- GitHub -->
+            <a href="https://github.com/lomol755" id="github"><i class="fa-brands fa-github"></i>GitHub</a>
+            <!-- 메인 -->
+            <main>백엔드 개발자</main>
+            <!-- 푸터 -->
+            <footer>Copyright &#169: 최현영</footer>
+    </div>
+</body>
+</html>
