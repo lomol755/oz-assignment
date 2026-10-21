@@ -1,78 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <!-- 외부 CSS(External CSS) -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    
-     <!-- 우리가 만든 CSS -->
-     <link rel="stylesheet" href="./style.css">
-    
-     <!-- 구글 폰트  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
- <style>
-        /* Internal CSS(내부 CSS) */
-        /* 선택자(Selecter): 조건에 맞는 태그들을 골라내는 방법 */
-        /* * 전체 선택자 */
-        #contents{
-            text-align: center;
-        }
-        header {
-                font-family: "Nanum Pen Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-                font-size: x-large;
-                font-weight: bold;
-                margin: 20px;
-
-        }
-        #github {
-           font-size: small;
-           color: gray;
-           text-decoration: none;
-        }
-
-        #github:hover{
-            color: orange;
-            text-decoration: underline;
-        }
-
-        main{
-            padding: 50px;
-           
-        }
-        footer {
-           
-            margin-top: 120px;
-            font-size: x-small
-        }
-    </style>
+    <title>최현영 이력서</title>
 </head>
 <body>
-    <a href="./resume_eng.html" id="english">영문 이력서</a>
+    <!-- 이름 & 직무 -->
+    <h1>최현영</h1>
+    <p>
+    AI 기술을 실제 의료 현장의 문제 해결에 연결하는 백엔드 개발자를 목표로 하고 있습니다.
+    OZ코딩스쿨 AI 헬스케어 캠프에서 욕창 관리 서비스의 CV 모델링을 맡으며
+    모델이 실제 서비스에 녹아드는 과정에 관심이 생겼고,
+    배운 것을 실무에 바로 적용할 수 있는 개발자가 되기 위해 꾸준히 성장하고 있습니다.
+    </p>
 
-    <!-- contents -> 콘텐츠 영역(div id="contents" -->
-     <!-- centered -> 가운데 정렬(공통 속성)(div class="centered") -->
-    <div id="contents">
-        <!-- 이름 -->
-            <header>최현영</header>
+    <!-- 프로필 이미지 (같은 폴더에 profile.jpg 파일을 넣어주세요) -->
+    <img src="profile.jpg" alt="최현영 프로필 사진" width="150">
 
-        <!-- 연락처 -->
-         <div class="contact-row"></div>
-         <span>lomol755@naver.com</span>
-         <!-- 휴대폰 -->
-          <span>010-5117-2536</span>
+    <!-- 연락처 -->
+    <p>이메일: lomol755@naver.com</p>
+    <p>연락처: 010-XXXX-XXXX</p>
+    <p>
+        GitHub:
+        <a href="https://github.com/lomol755" target="_blank">https://github.com/lomol755</a>
+    </p>
 
-            <!-- GitHub -->
-            <a href="https://github.com/lomol755" id="github"><i class="fa-brands fa-github"></i>GitHub</a>
-            <!-- 메인 -->
-            <main>백엔드 개발자</main>
-            <!-- 푸터 -->
-            <footer>Copyright &#169: 최현영</footer>
-    </div>
+    <hr>
+
+    <!-- 자기소개 -->
+    <h2>자기소개</h2>
+    <p>
+        여기에 자기소개를 2~3줄로 작성해주세요.
+        (예: 어떤 개발자가 되고 싶은지, 개발을 시작하게 된 계기 등)
+    </p>
+
+    <hr>
+
+    <!-- 기술 스택 (순서 없는 목록) -->
+    <h2>기술 스택</h2>
+    <ul>
+        <li>Python</li>
+        <li>HTML / CSS</li>
+        <li>Git / GitHub</li>
+        <li>머신러닝 (XGBoost, LightGBM, CatBoost)</li>
+    </ul>
+
+    <hr>
+
+    <!-- 프로젝트 (순서 있는 목록) -->
+    <h2>프로젝트</h2>
+    <ol>
+        <li>OZ헬스 캣치업 - 욕창 멀티모달 관리 서비스 (CV 모델링 담당)</li>
+        <li>데이콘 분류 대회 - EDA, 전처리, 부스팅 모델 앙상블</li>
+        <li>폐렴 환자 관리 백오피스 - 흉부 X-Ray 판독 모델 활용 (팀 프로젝트, 진행 중)</li>
+    </ol>
+
+    <hr>
+
+    <!-- 이력 테이블 -->
+    <h2>이력</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>기간</th>
+                <th>구분</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2026.07 ~ 현재</td>
+                <td>교육</td>
+                <td>OZ코딩스쿨 AI 헬스케어 초격차 캠프</td>
+            </tr>
+            <tr>
+                <td>0000.00 ~ 0000.00</td>
+                <td>학력</td>
+                <td>OO대학교 OO학과</td>
+            </tr>
+            <tr>
+                <td>0000.00</td>
+                <td>자격증</td>
+                <td>자격증 이름</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- 메일 발송 폼 -->
+    <h2>Contact Me</h2>
+    <form action="mailto:lomol755@naver.com" method="post" enctype="text/plain">
+        <p>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+        </p>
+        <p>
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </p>
+        <p>
+            <label for="message">내용</label>
+            <input type="text" id="message" name="message" placeholder="전하실 말씀을 입력하세요">
+        </p>
+        <button type="submit">메일 보내기</button>
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>Copyright &#169; 최현영</p>
+    </footer>
 </body>
 </html>
