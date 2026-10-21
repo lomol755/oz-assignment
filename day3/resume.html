@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최현영 이력서</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resume_style.css">
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <a href="#top" class="logo">최현영</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 상단 프로필 -->
+    <header id="top" class="profile">
+        <img src="profile.jpg" alt="최현영 프로필 사진" class="profile-img">
+        <div class="profile-info">
+            <h1>최현영</h1>
+            <p class="job">백엔드 개발자</p>
+            <div class="contact-row">
+                <span><i class="fa-solid fa-envelope"></i> lomol755@naver.com</span>
+                <span><i class="fa-solid fa-phone"></i> 010-XXXX-XXXX</span>
+                <a href="https://github.com/lomol755" target="_blank" id="github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 자기소개 -->
+        <section id="about" class="card">
+            <h2>자기소개</h2>
+           <p>
+    AI 기술을 실제 의료 현장의 문제 해결에 연결하는 백엔드 개발자를 목표로 하고 있습니다.
+    OZ코딩스쿨 AI 헬스케어 캠프에서 욕창 관리 서비스의 CV 모델링을 맡으며
+    모델이 실제 서비스에 녹아드는 과정에 관심이 생겼고,
+    배운 것을 실무에 바로 적용할 수 있는 개발자가 되기 위해 꾸준히 성장하고 있습니다.
+    </p>
+        </section>
+
+        <!-- 기술 스택 -->
+        <section id="skills" class="card">
+            <h2>기술 스택</h2>
+            <ul class="skills">
+                <li>Python</li>
+                <li>HTML / CSS</li>
+                <li>Git / GitHub</li>
+                <li>XGBoost</li>
+                <li>LightGBM</li>
+                <li>CatBoost</li>
+            </ul>
+        </section>
+
+        <!-- 프로젝트 -->
+        <section id="projects" class="card">
+            <h2>프로젝트</h2>
+            <div class="project-list">
+                <article class="project">
+                    <h3>OZ헬스 캣치업</h3>
+                    <p>욕창 멀티모달 관리 서비스 (CV 모델링 담당)</p>
+                </article>
+                <article class="project">
+                    <h3>데이콘 분류 대회</h3>
+                    <p>EDA, 전처리, 부스팅 모델 앙상블</p>
+                </article>
+                <article class="project">
+                    <h3>폐렴 환자 관리 백오피스</h3>
+                    <p>흉부 X-Ray 판독 모델 활용 팀 프로젝트 (진행 중)</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 이력 -->
+        <section id="history" class="card">
+            <h2>이력</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>기간</th>
+                            <th>구분</th>
+                            <th>내용</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 이력 붙여넣으세요 -->
+                        <tr>
+                            <td>2026.07 ~ 현재</td>
+                            <td>교육</td>
+                            <td>OZ코딩스쿨 AI 헬스케어 초격차 캠프</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 메일 폼 -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form action="mailto:lomol755@naver.com" method="post" enctype="text/plain" class="contact-form">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <label for="message">내용</label>
+                <input type="text" id="message" name="message" placeholder="전하실 말씀을 입력하세요">
+                <button type="submit">메일 보내기</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 최현영</p>
+    </footer>
+</body>
+</html>
